@@ -8,12 +8,12 @@ kit = ServoKit(channels=16)
 # 180 grados = MAXIMA VELOCIDAD
 
 while (True) :
-    kit.continuous_servo[15].throttle = -1
+    kit.continuous_servo[0].throttle = -1
     time.sleep(2)
     print("kk1")
-    kit.continuous_servo[15].throttle = 0
+    kit.continuous_servo[0].throttle = 0
     time.sleep(2)
     print("kk2")
-    kit.continuous_servo[15].throttle =  1
+    kit.continuous_servo[0].throttle =  1
     time.sleep(2)
     print("kk3")
